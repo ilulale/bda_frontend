@@ -25,7 +25,7 @@ function App() {
     console.log(data);
     axios
       .get(
-        `http://localhost:3000/api/cryptodata?startdate=${data["startdate"]}&coin=Bitcoin&units=${data["units"]}`
+        `http://athena.medicineforchaos.tk:3005/api/cryptodata?startdate=${data["startdate"]}&coin=Bitcoin&units=${data["units"]}`
       )
       .then((res) => {
         // console.log(res.data);
